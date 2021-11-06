@@ -1,0 +1,67 @@
+
+#main {
+  flex-wrap: wrap;
+  @extend %justify-content-center;
+
+  .pokemon {
+    margin: 5px;
+    height: 320px;
+    max-width: 240px;
+    @extend %fullwidth;
+
+    &__wrapper {
+      @extend %fullheight;
+
+      &-header {
+        height: 60%;
+        @extend %pos-relative;
+        
+        .tooltip {
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          color: orangered;
+          text-transform: uppercase;
+          font: 500 .875rem 'Glory', sans-serif;
+          @extend %pos-absolute;
+        }
+        
+        .pokefigure {
+          @extend %fullheight;
+
+          &__image {
+            margin: 0 auto;
+            object-fit: cover;
+            @extend %fullheight, %d-block;
+          }
+        }
+      }
+
+      &-footer {
+        height: 40%;
+        flex-direction: column;
+
+        @extend %align-items-center, %justify-content-center;
+
+        .pokename {
+          color: #303030;
+          text-align: center;
+          text-transform: capitalize;
+          font: 800 1.5rem 'Glory', sans-serif;
+        }
+
+        .poketypes {
+          padding: 12px 0;
+          @extend %fullwidth, %align-items-center, %justify-content-center;
+
+          &__single {
+            width: 25%;
+            @extend %flexcentering;
+            text-transform: uppercase;
+            font: 500 .9375rem 'Glory', sans-serif;
+          }
+        }
+      }
+    }
+  }
+}

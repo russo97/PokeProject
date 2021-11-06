@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@300;400;500;600;700;800&display=swap");
+#main .pokemon, #main .pokemon__wrapper-footer .poketypes {
+  width: 100%;
+}
+
+#main .pokemon__wrapper, #main .pokemon__wrapper-header .pokefigure, #main .pokemon__wrapper-header .pokefigure__image {
+  height: 100%;
+}
+
+html,
+body, #main .pokemon__wrapper-header {
+  position: relative;
+}
+
+#main .pokemon__wrapper-header .tooltip {
+  position: absolute;
+}
+
+#main .pokemon__wrapper-footer .poketypes__single, #main, #main .pokemon__wrapper-footer, #main .pokemon__wrapper-footer .poketypes, #aside-top, #aside-top .typecounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main .pokemon__wrapper-header .pokefigure__image {
+  display: block;
+}
+
+#main .pokemon__wrapper-footer .poketypes__single, #main, #main .pokemon__wrapper-footer, #main .pokemon__wrapper-footer .poketypes, #aside-top {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#aside-top .typecounter {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#main .pokemon__wrapper-footer .poketypes__single, #main .pokemon__wrapper-footer, #main .pokemon__wrapper-footer .poketypes, #aside-top, #aside-top .typecounter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0 none;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 100%;
+}
+
+html body {
+  background-color: #f5f5f5;
+}
+
+#main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main .pokemon {
+  margin: 5px;
+  height: 320px;
+  max-width: 240px;
+}
+
+#main .pokemon__wrapper-header {
+  height: 60%;
+}
+
+#main .pokemon__wrapper-header .tooltip {
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: orangered;
+  text-transform: uppercase;
+  font: 500 .875rem 'Glory', sans-serif;
+}
+
+#main .pokemon__wrapper-header .pokefigure__image {
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main .pokemon__wrapper-footer {
+  height: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main .pokemon__wrapper-footer .pokename {
+  color: #303030;
+  text-align: center;
+  text-transform: capitalize;
+  font: 800 1.5rem 'Glory', sans-serif;
+}
+
+#main .pokemon__wrapper-footer .poketypes {
+  padding: 12px 0;
+}
+
+#main .pokemon__wrapper-footer .poketypes__single {
+  width: 25%;
+  text-transform: uppercase;
+  font: 500 .9375rem 'Glory', sans-serif;
+}
+
+#aside-top {
+  padding: 12px 0;
+}
+
+#aside-top .typecounter {
+  margin: 0 5px;
+  padding: 2px 5px;
+}
+
+#aside-top .typecounter__square {
+  width: 15px;
+  height: 15px;
+  background-color: purple;
+}
+
+#aside-top .typecounter__text {
+  padding: 0 12px;
+  color: #1c1c1c;
+  font: 500 1rem 'Glory', sans-serif;
+}

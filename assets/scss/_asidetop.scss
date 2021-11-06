@@ -1,0 +1,25 @@
+
+#aside-top {
+  padding: 12px 0;
+  
+  @extend %align-items-center, %justify-content-center;
+  
+  .typecounter {
+    margin: 0 5px;
+    padding: 2px 5px;
+
+    @extend %align-items-center, %justify-content-space-evenly;
+
+    &__square {
+      width: 15px;
+      height: 15px;
+      background-color: purple;
+    }
+
+    &__text {
+      padding: 0 12px;
+      color: #1c1c1c;
+      font: 500 1rem 'Glory', sans-serif;
+    }
+  }
+}

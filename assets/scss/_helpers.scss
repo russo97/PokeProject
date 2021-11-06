@@ -1,0 +1,50 @@
+
+%nomargin {
+  margin: 0;
+}
+
+%nopadding {
+  padding: 0;
+}
+
+%fullwidth {
+  width: 100%;
+}
+
+%fullheight {
+  height: 100%;
+}
+
+%fullblock {
+  @extend %fullwidth, %fullheight;
+}
+
+%flexcentering {
+  @extend %align-items-center, %justify-content-center;
+}
+
+@each $pos in (relative, absolute, fixed) {
+  %pos-#{$pos} {
+    position: $pos;
+  }
+}
+
+@each $display in (flex, block, inline-block, none, grid) {
+  %d-#{$display} {
+    display: $display;
+  }
+}
+
+@each $justify in (center, flex-start, flex-end, space-between, space-evenly, space-around) {
+  %justify-content-#{$justify} {
+    @extend %d-flex;
+    justify-content: $justify;
+  }
+}
+
+@each $alignItems in (flex-start, center, flex-end) {
+  %align-items-#{$alignItems} {
+    @extend %d-flex;
+    align-items: $alignItems;
+  }
+}
